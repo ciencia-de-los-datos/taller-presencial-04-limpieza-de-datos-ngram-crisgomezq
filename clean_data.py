@@ -26,7 +26,7 @@ def create_key(df, n):
     )
     df["key"] = df["key"].str.split("")
 
-    # ------------------------------------------------------
+    # ------------------------------------------------------ 
     # Esta es la parte especifica del algoritmo de n-gram:
     #
     # - Una el texto sin espacios en blanco
