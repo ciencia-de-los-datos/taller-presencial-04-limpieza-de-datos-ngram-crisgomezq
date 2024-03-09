@@ -24,7 +24,7 @@ def create_key(df, n):
     df["key"] = df["key"].str.translate(
         str.maketrans("", "", "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~")
     )
-    df["key"] = df["key"].str.split("")
+    df["key"] = df["key"].str.split()
 
     # ------------------------------------------------------ 
     # Esta es la parte especifica del algoritmo de n-gram:

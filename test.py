@@ -12,6 +12,7 @@ if not os.path.exists("test.csv"):
 
 test = pd.read_csv("test.csv", index_col=None)
 
+
 assert test.loc[0, "key"] == "acdeghinoqruy"
 assert test.loc[1, "key"] == "acdegilmnoty"
 assert test.loc[3, "key"] == "acdehioqrsu"
